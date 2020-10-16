@@ -28,7 +28,7 @@ BatchCord is a discord clone entirely made in batch!
 5. Run BatchCordLauncher.exe
 6. Login
 7. Enter the hostname, password and username for the FTP server
-8. Type '[Server]' into the message box
-9. Enter any number that isnt already linked to a server
+8. Type `[Server]` into the message box
+9. Enter any number that isn't already linked to a server
 10. Enter the hostname, password and username for the FTP server
 11. Your server is ready to use!
