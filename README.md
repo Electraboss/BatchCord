@@ -4,7 +4,7 @@ BatchCord is a discord clone entirely made in batch!
 ## Table of contents
 
 * [Install](#Install)
-* [Server Setup](#Server Setup)
+* [Server Setup](#ServerSetup)
 
 
 ### Install
@@ -19,7 +19,7 @@ BatchCord is a discord clone entirely made in batch!
 5. Create a user
 6. Install Finished!
 
-### Server Setup
+### ServerSetup
 
 1. Create an FTP server
 2. Login to the FTP server
