@@ -65,7 +65,7 @@ goto TryDetails
 :nousers
 echo No users have been created yet, would you like to create one? (Y/N)
 choice /c YN /n
-if %errorlevel%==2 goto Hello
+if %errorlevel%==2 goto END
 goto CreateUser
 
 :CreateUser 
@@ -196,19 +196,19 @@ if %menuchoice% == off goto MicOff
 if %menuchoice% == Off goto MicOff
 echo Invalid Command
 pause 
-goto MainScreen
+goto read_messages
 
 :MicOn
 echo.
 echo Mic Unmuted!
 pause
-goto MainScreen
+goto read_messages
 
 :MicOff
 echo.
 echo Mic Muted!
 pause
-goto MainScreen
+goto read_messages
 
 :Stream
 echo.
@@ -229,28 +229,28 @@ echo.
 echo Now streaming at 720p 60fps
 echo Stream join code: 65m7-3c4v-a56s-9o20
 pause
-goto MainScreen
+goto read_messages
 
 :Stream72030
 echo.
 echo Now streaming at 720p 30fps
 echo Stream join code: 65m7-3c4v-a56s-9o20
 pause
-goto MainScreen
+goto read_messages
 
 :Stream48060
 echo.
 echo Now streaming at 480p 60fps
 echo Stream join code: 65m7-3c4v-a56s-9o20
 pause
-goto MainScreen
+goto read_messages
 
 :Stream48030
 echo.
 echo Now streaming at 480p 30fps
 echo Stream join code: 65m7-3c4v-a56s-9o20
 pause
-goto MainScreen
+goto read_messages
 
 :NitroGift
 echo Send someone a year of Nitro for AUD$30!
@@ -276,10 +276,10 @@ timeout 1 > NUL
 echo Shareable Nitro Code: 55d4-3n7k-6b6s-90wm
 echo Thanks for purchasing!
 pause
-goto MainScreen
+goto read_messages
 
 :Cancel
-goto MainScreen
+goto read_messages
 
 :Settings
 cls
@@ -301,14 +301,14 @@ set /p NewPass=
 echo Changed PASSWORD to: %NewPass%
 echo Email Confirmation has also been sent, please check that to activate the new password!
 pause
-goto MainScreen
+goto read_messages
 
 :ChangeUsr
 echo What would you like to change your USERNAME to?
 set /p NewUser=
 echo Changed USERNAME to: %NewUser%
 pause
-goto MainScreen
+goto read_messages
 
 :ChangeTheme
 cls
@@ -330,7 +330,7 @@ echo 0f> Theme.txt
 color 0f
 echo Changed successfully!
 pause
-goto MainScreen
+goto read_messages
 
 :BlueBlack
 cls
@@ -338,7 +338,7 @@ echo 09> Theme.txt
 color 09
 echo Changed successfully!
 pause
-goto MainScreen
+goto read_messages
 
 :GreenBlack
 cls
@@ -346,7 +346,7 @@ echo 0a> Theme.txt
 color 0a
 echo Changed successfully!
 pause
-goto MainScreen
+goto read_messages
 
 
 :Write
@@ -540,3 +540,5 @@ echo Server added!
 pause
 cls
 goto read_messages
+
+:END
