@@ -24,7 +24,7 @@ BatchCord is a discord clone entirely made in batch!
 
 1. Create an FTP server
 2. Login to the FTP server
-3. Create a file named Chat.txt in the folder BatchCord is installed in
+3. Create a file named Chat.txt in the folder BatchCord is installed in (If it doesn't already exist)
 4. Copy that file to the root directory of your FTP server
 5. Run BatchCordLauncher.exe
 6. Login
