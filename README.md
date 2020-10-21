@@ -1,3 +1,7 @@
+[![HitCount](http://hits.dwyl.com/Electraboss/BatchCord.svg)](http://hits.dwyl.com/Electraboss/BatchCord) [![Node version](https://img.shields.io/badge/Discord-Support%20%26%20Updates!-blue)](https://discord.gg/FGPypk2)
+
+
+
 # BatchCord
 BatchCord is a discord clone entirely made in batch!
 
